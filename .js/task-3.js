@@ -9,6 +9,8 @@
 // Все элементы галереи должны добавляться в DOM за одну операцию вставки.
 // Добавь минимальное оформление галереи флексбоксами или гридами через css - классы.
 
+
+const listImages = document.querySelector('#gallery');
 const images = [
     {
         url:
@@ -28,29 +30,34 @@ const images = [
 ];
 
 
-const listImg = document.querySelector("#gallery");
-const fragment = document.createDocumentFragment();
+// const fragment = document.createDocumentFragment();
 
-images.forEach(item => {
-    const createLi = document.createElement("li");
-    const createImg = document.createElement("img");
-    createLi.prepend(createImg);
-    createImg.alt = item.alt;
-    createImg.src = item.url;
-    createImg.width = "400";
-    createImg.height = "250";
-    fragment.append(createLi);
+images.forEach(el => {
+
+    let message = `<li class="list.item"><img src=${el.url} alt=${el.alt} class="list-img"></li>`
+    listImages.insertAdjacentHTML('beforeend', message)
+
 });
 
-listImg.prepend(fragment);
 
 
-// const createGalleryItem = ({ url, alt }) =>
-//     `<li><img src="${url}" alt="${alt}" width = 200 height = 150></li>`;
-// const galleryMarkup = images.reduce(
-//     (acc, item) => acc + createGalleryItem(item),
-//     ""
-// );
-// const galleryList = document.querySelector("#gallery");
-// galleryList.insertAdjacentHTML("afterbegin", galleryMarkup);
-// galleryList.setAttribute("style", "list-style-type:none; display: flex;");
+
+
+
+
+
+
+
+
+
+
+
+
+ // const createLi = document.createElement("li");
+    // const createImg = document.createElement("img");
+    // createLi.prepend(createImg);
+    // createImg.alt = item.alt;
+    // createImg.src = item.url;
+    // createImg.width = "400";
+    // createImg.height = "250";
+    // fragment.append(createLi);
