@@ -1,10 +1,6 @@
-// Напиши скрипт который, при наборе текста в инпуте input#name-input
-// (событие input),
-//  подставляет его текущее значение в span#name-output. 
-// Если инпут пустой,
-//  в спане должна отображаться строка 'незнакомец'.
-/* <input type="text" placeholder="Ваше имя?" id="name-input" />
-  <h1>Привет, <span id="name-output">незнакомец</span>!</h1> */
+// Напиши скрипт який, при наборі тексту в інпут input#name - input(подія input),
+// підставляє його поточне значення в span#name - output.якщо інпут порожній,
+// в спані повинен відображатися рядок 'незнайомець'.
 
 const checkInput = document.querySelector("#name-input");
 const checkOutput = document.querySelector("#name-output");
