@@ -2,15 +2,24 @@
 // підставляє його поточне значення в span#name - output.якщо інпут порожній,
 // в спані повинен відображатися рядок 'незнайомець'.
 
-const checkInput = document.querySelector("#name-input");
-const checkOutput = document.querySelector("#name-output");
+const inputName = document.querySelector('#name-input');
+const outputName = document.querySelector('#name-output');
 
-checkInput.addEventListener("input", checkInputStatus);
 
-function checkInputStatus() {
-    if (!checkInput.value) {
-        checkOutput.textContent = "незнакомец";
+
+const handleInput = event => {
+    if (!inputName.value) {
+        outputName.textContent = 'незнайомець';
     } else {
-        checkOutput.textContent = checkInput.value;
+        outputName.textContent = inputName.value
     }
 }
+
+inputName.addEventListener('input', handleInput);
+
+
+
+
+
+
+
