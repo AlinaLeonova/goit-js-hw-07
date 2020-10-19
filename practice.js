@@ -40,3 +40,25 @@ for (let i = 0; i < 3; i++) {
 
 
 
+
+// const body = document.querySelector('body');
+// const form = document.querySelector('.form');
+// const name = document.querySelector('.name');
+// const surname = document.querySelector('.surname');
+// const range = document.querySelector('.range');
+// form.addEventListener('submit', ev => {
+//   ev.preventDefault();
+//   body.insertAdjacentHTML(
+//     'beforeend',
+//     `<h1 style = "font-size: ${range.value}px; transition: .2s" class="output" > Name: ${name.value}, Surname ${surname.value}</h1>`,
+//   );
+// });
+// range.addEventListener('input', ev => {
+//   const output = document.querySelectorAll('.output');
+//   // output ? (output.style.fontSize = `${range.value}px`) : '';
+//   output
+// ? output.forEach(el => {
+//         el.style.fontSize = `${range.value}px`;
+//       })
+//     : '';
+// });
