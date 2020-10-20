@@ -2,7 +2,6 @@
 // отдельный li, после чего вставит все li за одну операцию в список ul.ingredients.
 // Для создания DOM-узлов используй document.createElement().
 
-
 const ingredients = [
     'Картошка',
     'Грибы',
@@ -12,7 +11,6 @@ const ingredients = [
     'Приправы',
 ];
 const list = document.querySelector('#ingredients');
-
 
 for (let i = 0; i < 6; i++) {
     const ingredientItem = document.createElement('li');
