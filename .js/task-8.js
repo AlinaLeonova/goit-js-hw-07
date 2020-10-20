@@ -7,7 +7,6 @@
 //     яка приймає 1 параметр amount - число.Функція створює стільки div, скільки вказано в amount і додає їх в div#boxes.
 
 // Кожен створений div:
-
 // Має випадковий rgb колір фону
 // Розміри найпершого div - 30px на 30px
 // Кожен наступний div після першого,
@@ -16,10 +15,8 @@
 
 const controlsInput = document.querySelector('#controls > input');
 const boxes = document.querySelector('#boxes');
-
 const btnRender = document.querySelector('[data-action="render"]');
 const btnDestroy = document.querySelector('[data-action="destroy"]');
-
 
 const createBoxes = function (amount) {
     const array = [];
@@ -36,9 +33,7 @@ const createBoxes = function (amount) {
         let random2 = Math.round(Math.random() * 255)
         let random3 = Math.round(Math.random() * 255)
         itemDiv.style.backgroundColor = `rgb(${random1}, ${random2}, ${random3})`;
-
         array.push(itemDiv);
-
     } return array
 }
 
