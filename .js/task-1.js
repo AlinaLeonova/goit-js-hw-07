@@ -27,26 +27,6 @@ ulRef.forEach((el) => {
 
 
 
-// const listTitle = document.querySelector('h2')
-// console.log(`Категория: ${listTitle.textContent}
-// Количество элементов: ${listTitle.textContent.length}`);
-
-// listTitle.forEach((el) => {
-//     console.log(` ${el.listTitle} `);
-
-// })
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
