@@ -10,12 +10,8 @@
   border-color: #f44336;
 }
 
-.list-item {
-  display: flex;
-  flex-direction: wrap;
-}
 
 .list-img {
-  width: 500px;
-  height: 400px;
+width: 50%;
+height: 50%;
 }
