@@ -8,11 +8,9 @@ const textRef = document.querySelector('#text');
 
 const handleRange = event => {
     let rangeInput = rangeRef.value;
-
-
     textRef.style.fontSize = rangeInput + 'px';
     console.log(rangeInput);
-    // textRef.style.transition = .7 + 's';
+    textRef.style.transition = .7 + 's';
 }
 
 rangeRef.addEventListener('input', handleRange);
