@@ -1,6 +1,6 @@
-// Напиши скрипт, который для каждого элемента массива ingredients создаст
-// отдельный li, после чего вставит все li за одну операцию в список ul.ingredients.
-// Для создания DOM-узлов используй document.createElement().
+// Напиши скрипт, який для кожного елемента масиву ingredients створить окремий li,
+// після чого вставить всі li за одну операцію в список ul.ingredients.
+// Для створення DOM - вузлів використовуй document.createElement().
 
 const ingredients = [
     'Картошка',
@@ -10,10 +10,11 @@ const ingredients = [
     'Зелень',
     'Приправы',
 ];
-const list = document.querySelector('#ingredients');
 
-for (let i = 0; i < 6; i++) {
-    const ingredientItem = document.createElement('li');
-    ingredientItem.textContent = ingredients[i];
-    list.append(ingredientItem);
-}
+const newUl = document.querySelector("#ingredients");
+
+ingredients.forEach((elem) => {
+    const createLi = document.createElement("li");
+    createLi.textContent = elem;
+    newUl.append(createLi);
+});

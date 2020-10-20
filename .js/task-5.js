@@ -5,7 +5,7 @@
 const inputName = document.querySelector('#name-input');
 const outputName = document.querySelector('#name-output');
 
-const handleInput = event => {
+const handleInput = () => {
     if (!inputName.value) {
         outputName.textContent = 'незнайомець';
     } else {

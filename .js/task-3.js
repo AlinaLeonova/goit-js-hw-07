@@ -26,6 +26,6 @@ const images = [
 ];
 
 images.forEach(el => {
-    let message = `<li><img src=${el.url} alt=${el.alt} class="list-img"></li>`
-    listImages.insertAdjacentHTML('beforeend', message)
+
+    listImages.insertAdjacentHTML('beforeend', `<li><img src=${el.url} alt=${el.alt} class="list-img"></li>`)
 });
