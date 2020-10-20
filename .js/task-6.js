@@ -4,11 +4,7 @@
 // Якщо введена відповідна кількість, то border інпут стає зеленим, якщо неправильне - червоним.
 // Для додавання стилів, використовуй CSS - класи valid і invalid.
 
-
 const inputRef = document.querySelector('#validation-input');
-
-// inputRef.addEventListener('blur',)
-// inputRef.addEventListener('input',)
 
 const handleInputBlur = event => {
     console.log(inputRef.value.length);
