@@ -10,7 +10,6 @@
 const list = document.querySelectorAll('li.item')
 console.log(`В списке ${list.length} категории!`);
 
-
 const ulRef = Array.from(document.querySelector('#categories').children)
 
 ulRef.forEach((el) => {
